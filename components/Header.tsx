@@ -117,7 +117,7 @@ const Header = () => {
               <NavigationMenuItem key={index}>
                 {item.items ? (
                   <>
-                    <NavigationMenuTrigger className="text-xs font-semibold tracking-wide">
+                    <NavigationMenuTrigger className="text-xs bg-transparent font-semibold tracking-wide">
                       {item.title}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -153,12 +153,12 @@ const Header = () => {
         </NavigationMenu>
 
         {/* Desktop Buttons */}
-        <div className="hidden lg:flex items-center gap-3">
+        {/* <div className="hidden lg:flex items-center gap-3">
           <Button variant="ghost" size="sm">
             Sign In
           </Button>
           <Button size="sm">Get Started</Button>
-        </div>
+        </div> */}
 
         {/* Mobile Menu Toggle with Sheet */}
         <Sheet>
