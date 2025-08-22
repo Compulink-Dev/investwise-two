@@ -30,6 +30,8 @@ const Header = () => {
       title: "INVESTING BASICS",
       href: "#investment-basics",
       items: [
+        { title: "Investment Products", href: "/investment-products" },
+        { title: "Media Center", href: "/media-center" },
         { title: "Being Financially Literate", href: "#" },
         { title: "Why should you invest?", href: "#" },
         { title: "When should you invest?", href: "#" },
