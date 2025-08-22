@@ -62,7 +62,7 @@ const HeroSlider = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/50"
+            className="absolute inset-0 bg-gradient-to-r from-primary to-primary/50"
           >
             <div
               className="absolute inset-0 bg-cover bg-center"

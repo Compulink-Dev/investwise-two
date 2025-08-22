@@ -60,7 +60,7 @@ export default function HeroSlider() {
             className="h-full w-full bg-cover bg-center"
             style={{ backgroundImage: `url(${slides[current].image})` }}
           >
-            <div className="h-full w-full bg-black/50 flex flex-col items-center justify-center text-center px-6">
+            <div className="h-full w-full bg-primary/50 flex flex-col items-center justify-center text-center px-6">
               <motion.h1
                 initial={{ y: 40, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}

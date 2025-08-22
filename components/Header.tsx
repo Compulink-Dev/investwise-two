@@ -28,51 +28,127 @@ const Header = () => {
   const navigationItems = [
     {
       title: "INVESTING BASICS",
-      href: "#investment-basics",
+      href: "#investing-basics",
       items: [
-        { title: "Investment Products", href: "/investment-products" },
-        { title: "Media Center", href: "/media-center" },
-        { title: "Being Financially Literate", href: "#" },
-        { title: "Why should you invest?", href: "#" },
-        { title: "When should you invest?", href: "#" },
-        { title: "How much should you invest?", href: "#" },
-        { title: "How the capital market works", href: "#" },
-        { title: "Understanding Transaction Costs", href: "#" },
-        { title: "Risk / Return Relationship", href: "#" },
-        { title: "Diversification", href: "#" },
+        {
+          title: "Being Financially Literate",
+          href: "/basics/financial-literacy",
+        },
+        { title: "Why Invest?", href: "/basics/why-invest" },
+        { title: "How the Market Works", href: "/basics/market-works" },
+        {
+          title: "Understanding Transaction Costs",
+          href: "/basics/transaction-costs",
+        },
+        { title: "Key Investment Concepts", href: "/basics/key-concepts" },
+        {
+          title: "Savings vs. Investment",
+          href: "/basics/savings-vs-investment",
+        },
+        { title: "Risk / Return Relationship", href: "/basics/risk-return" },
+        { title: "Capital Gains", href: "/basics/capital-gains" },
+        { title: "Diversification", href: "/basics/diversification" },
       ],
     },
     {
       title: "INVESTMENT PROCESS",
       href: "#investment-process",
       items: [
-        { title: "Diversify your Investments", href: "#" },
-        { title: "Know your licensed intermediaries", href: "#" },
-        { title: "Knowing your Risk Profile", href: "#" },
-        { title: "Portfolio Monitoring and Performance Evaluation", href: "#" },
-        { title: "Setting Investment Objectives", href: "#" },
-        { title: "Understand Investment Products", href: "#" },
+        {
+          title: "Set Your Investment Objectives",
+          href: "/process/objectives",
+        },
+        { title: "Know Your Risk Profile", href: "/process/risk-profile" },
+        {
+          title: "Understand What You Are Investing In",
+          href: "/process/understanding-investments",
+        },
+        {
+          title: "Know Your Licensed Intermediaries",
+          href: "/process/licensed-intermediaries",
+        },
+        { title: "Asset Allocation", href: "/process/asset-allocation" },
+        { title: "Rebalancing Your Portfolio", href: "/process/rebalancing" },
+        { title: "Monitoring Your Investments", href: "/process/monitoring" },
       ],
     },
     {
-      title: "INVESTMENT PROTECTION",
-      href: "#investment-protection",
+      title: "INVESTMENT PRODUCTS",
+      href: "#investment-products",
       items: [
-        { title: "Types of Investment Fraud", href: "#" },
-        { title: "What you can do to avoid Investment Fraud", href: "#" },
-        { title: "Red Flags for Investment Fraud", href: "#" },
+        { title: "Products", href: "/investment-products" },
+        { title: "Shares", href: "/products/shares" },
+        { title: "Bonds", href: "/products/bonds" },
+        { title: "Collective Investment Schemes", href: "/products/cis" },
+      ],
+    },
+    // {
+    //   title: "PROTECTING YOUR INVESTMENTS",
+    //   href: "#protecting-investments",
+    //   items: [
+    //     {
+    //       title: "Investor Protection Tips (Do’s & Don’ts)",
+    //       href: "/protection/tips",
+    //     },
+    //     {
+    //       title: "Shareholder Rights & Responsibilities",
+    //       href: "/protection/rights",
+    //     },
+    //     {
+    //       title: "Use of Licensed Intermediaries",
+    //       href: "/protection/intermediaries",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "INVESTOR ALERTS & WARNINGS",
+    //   href: "#alerts",
+    //   items: [{ title: "Avoiding Fraud / Scams", href: "/alerts/fraud" }],
+    // },
+    // {
+    //   title: "DISCLOSURE DOCUMENTS",
+    //   href: "#disclosure",
+    //   items: [
+    //     {
+    //       title: "Understanding Components of an Annual Report",
+    //       href: "/disclosure/annual-report",
+    //     },
+    //   ],
+    // },
+    // {
+    //   title: "INVESTOR COMPLAINTS",
+    //   href: "#complaints",
+    //   items: [{ title: "Lodging Complaints", href: "/complaints/lodging" }],
+    // },
+    // {
+    //   title: "FAQ",
+    //   href: "/faq",
+    // },
+    {
+      title: "MEDIA CORNER",
+      href: "#media-corner",
+      items: [
+        { title: "Media Corner", href: "/media-corner" },
+        { title: "Latest News", href: "/media/news" },
+        { title: "Upcoming Events", href: "/media/events" },
+        { title: "Publications", href: "/media/publications" },
+        { title: "Speeches & Presentations", href: "/media/speeches" },
+        { title: "Testimonials", href: "/media/testimonials" },
+        { title: "Media Gallery", href: "/media/gallery" },
       ],
     },
     {
-      title: "GAME CENTRE",
+      title: "GAME CENTER",
       href: "#game-center",
       items: [
-        { title: "Capital Market Basic Knowledge Quiz", href: "#" },
-        { title: "Spot and Share", href: "#" },
+        { title: "Quiz", href: "/games/quiz" },
+        { title: "Word Search", href: "/games/word-search" },
       ],
     },
-    { title: "RESOURCES", href: "#resources" },
-    { title: "LEARNING", href: "#learning-path" },
+    {
+      title: "CONTACT",
+      href: "/contact",
+    },
   ];
 
   const handleSearch = (e: React.FormEvent) => {
